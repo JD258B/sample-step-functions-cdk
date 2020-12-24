@@ -19,7 +19,17 @@ setuptools.setup(
     packages=setuptools.find_packages(where="sample_step_functions_cdk"),
 
     install_requires=[
-        "aws-cdk.core==1.79.0",
+        "aws-cdk.core==1.77.0",
+        "aws_solutions_constructs.aws_events_rule_step_function",
+        "aws-cdk.aws-events",
+        "aws-cdk.aws-stepfunctions",
+        "aws-cdk.aws-stepfunctions-tasks",
+        "aws-cdk.aws-lambda",
+        "aws-cdk.aws-sns",
+        "aws-cdk.aws-sns-subscriptions",
+        "aws-cdk.aws-iam",
+        "aws-cdk.aws-apigateway",
+        "aws-cdk.aws-lambda-event-sources"
     ],
 
     python_requires=">=3.6",

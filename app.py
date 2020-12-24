@@ -6,6 +6,8 @@ from sample_step_functions_cdk.sample_step_functions_cdk_stack import SampleStep
 
 
 app = core.App()
-SampleStepFunctionsCdkStack(app, "sample-step-functions-cdk")
+sfn_stack = SampleStepFunctionsCdkStack(app, "sample-step-functions-cdk")
+core.Tags.of(sfn_stack).add('env', 'prod')
+core.Tags.of(sfn_stack).add('service', 'validate-iam-policy')
 
 app.synth()
