@@ -1,5 +1,4 @@
 # AWS CDK Python Lab
----
 ## Automated security orchestrator with AWS Step Functions
 
 Took the lab [Automated security orchestrator with AWS Step Functions](https://github.com/aws-samples/automating-a-secutity-incident-with-step-functions) and created it in the AWS CDK in Python.
